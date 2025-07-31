@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>
+User Registration Form
+</title>
+</head>
+<body>
+
+  <h2 align="center">User Registration</h2>
+<center>
+  <form action="/submit_registration" method="post">
+    <table border="0">
+      <tr>
+        <td><label for="username">Username:</label></td>
+        <td><input type="text" id="username" name="username" required></td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td class="gender-group">
+          <label><input type="radio" name="gender" value="male" required> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="phno">Phone Number:</label></td>
+        <td><input type="tel" id="phno" name="phno" pattern="[0-9]{10}" placeholder="10-digit number" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email (Gmail):</label></td>
+        <td><input type="email" id="email" name="email" placeholder="yourname@gmail.com" required></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password" minlength="6" required></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="center">
+          <input type="submit" value="Register">
+        </td>
+      </tr>
+    </table>
+  </form>
+</center>
+</body>
+</html>
